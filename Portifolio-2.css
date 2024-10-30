@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    z-index: 10; 
+}
+
+header h1 {
+    font-size: 18px;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+.inicio {
+    background-image: url('inicio.jpg');
+    background-position: center;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-size: cover; 
+}
+
+.inicio h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.inicio p {
+    font-size: 24px;
+}
+
+.Portfólio {
+    height: 150vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(portifolio.jpg);
+    background-size: cover;
+}
+
+h1, p {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+h1:hover, p:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.galeria {
+    padding: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.Imagem {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.Imagem img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.Imagem:hover {
+    transform: scale(1.1);
+}
+
+.sobre, .contato {
+    padding: 50px;
+    text-align: center;
+    transition: opacity 1s ease, transform 1s ease;
+    color: #000;
+    height: 130vh;
+}
+
+.sobre {
+    background-image: url(informaçoes.jpg);
+    color: white;
+}
+
+.contato {
+    background-image: url(Fundodecontatos.jpg);
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: transparent;
+    color: #000;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00aaff;
+}
+
+.contato label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contato input[type="text"],
+.contato input[type="email"] {
+    transition: background-color 0.5s ease;
+}
+
+.contato input:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.borda {
+    border: 2px white solid;
+    width: 400px;
+    height: 500px;
+}
+
+.sobreborda {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.titulos {
+    padding-bottom: 20px;
+}
+
+h2 {
+    padding-bottom: 100px;
+}
+
+.subtitulo {
+    padding-bottom: 50px;
+}
+
+.letras {
+    padding: 20px;
+}
+
+.final {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.final1 {
+    color: black;
+    padding: 15px;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visivel {
+    opacity: 1;
+    transform: translateY(0);
+    background-size: cover;
+}
+
+.formulario-contato {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    margin: 5px 0; 
+    padding: 8px; 
+    width: 100%; 
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-size: 14px; 
+}
+
+.formulario-contato button {
+    margin-top: 10px; 
+    padding: 10px;
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.formulario-contato button:hover {
+    background-color: #0056b3; 
+}
+
+
+:root {
+    --cor-fundo-claro: #fff;
+    --cor-fundo-escuro: #000;
+    --cor-texto-claro: #000;
+    --cor-texto-escuro: #fff;
+}
+
+
+
+
+:root {
+    --cor-fundo-claro: #fff;
+    --cor-fundo-escuro: #000;
+    --cor-texto-claro: #000;
+    --cor-texto-escuro: #fff;
+}
+
+body {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-escuro);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-escuro);
+}
+
+.light-mode {
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-claro);
+}
+
+.toggle-theme {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    width: 60px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.bolinha {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.dark-mode .bolinha {
+    background-color: black;
+    transform: translateX(30px);
+}
+
+.light-mode .bolinha {
+    background-color: white;
+    transform: translateX(0);
+}
